@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de Clientes e Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptCliente.js" defer></script>
+    <script src="js/scriptProduto.js" defer></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Inventário • Capitu Emoções •</h1>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="title">
+                <h2 class="subtitulo" style="width: 107px;">Cadastro</h2>
+                <span class="descricao-container">Cadastro de clientes</span>
+            </div>
+            <div class="card">
+                <form>
+                    <div class="lineInput">
+                        <input type="text" id="nome" placeholder="Nome completo" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="email" placeholder="E-mail" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="cpf" placeholder="CPF" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="endereco" placeholder="Endereço" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="contato" placeholder="Número de contato" autocomplete="off" required>
+                    </div>
+                    <button type="button" class="botao" id="botao-cadastrar"
+                        onclick="cliente.cadastrar()">Cadastrar</button>
+                    <button type="button" class="botao" onclick="cliente.cancelar()">Cancelar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="title">
+                <h2 class="subtitulo" style="width: 53px;">Lista</h2>
+                <span class="descricao-container">Lista de clientes</span>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Ações</th>
+                        <th>Código de cadastro</th>
+                        <th>Nome completo</th>
+                        <th>E-mail</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Número de contato</th>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-container">
+            <div class="title">
+                <h2 class="subtitulo" style="width: 107px;">Cadastro</h2>
+                <span class="descricao-container">Cadastro de produtos</span>
+            </div>
+            <div class="card">
+                <form>
+                    <div class="lineInput">
+                        <input type="text" id="nomeProduto" placeholder="Nome do produto" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="tipoProduto" placeholder="Tipo do produto" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="marcaProduto" placeholder="Marca do Produto" autocomplete="off" required>
+                    </div>
+                    <div class="lineInput">
+                        <input type="text" id="descricaoProduto" placeholder="Descrição breve do produto"
+                            autocomplete="off" required>
+                    </div>
+                    <button type="button" class="botao" id="botao-cadastrarProduto"
+                        onclick="produto.cadastrar()">Cadastrar</button>
+                    <button type="button" class="botao" onclick="produto.cancelar()">Cancelar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="title">
+                <h2 class="subtitulo" style="width: 53px;">Lista</h2>
+                <span class="descricao-container">Lista de produtos</span>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Ações</th>
+                        <th>Código de cadastro</th>
+                        <th>Nome do produto</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Descrição breve</th>
+                    </thead>
+                    <tbody id="tbody2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo" class="footer">
+        <div class="footer-col">
+            <div class="social-links">
+                <a href="https://github.com/jessicasiiq" title="Perfil Github" target="_blank">
+                    <i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jessicassiqueira/" title="Perfil Linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
